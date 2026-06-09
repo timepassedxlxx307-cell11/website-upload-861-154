@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>内容搜索_高清影视资源库</title>
+  <meta name="description" content="在高清影视资源库搜索电影、电视剧、热门剧集、地区、年份、标签与影视简介，快速进入在线播放详情页。">
+  <meta name="keywords" content="影视搜索,在线搜索电影电视剧,免费看在线精品亚洲一区二区高清视频, 全网热门影视剧大全, 在线免费播放电影电视剧, 高清影视资源库, 流畅无广告观影平台, 最新热门影视全集, 免费追剧网站">
+  <link rel="stylesheet" href="./assets/css/site.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="./index.html" aria-label="高清影视资源库">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">
+        <strong>高清影视资源库</strong>
+        <em>免费在线观看 · 热播榜</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <div class="nav-dropdown">
+        <a href="./categories.html">分类</a>
+        <div class="dropdown-panel">
+          <a href="./category-hot-picks.html">热映精选</a>
+          <a href="./category-action-adventure.html">动作冒险</a>
+          <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+          <a href="./category-romance-drama.html">爱情剧情</a>
+          <a href="./category-comedy-life.html">喜剧生活</a>
+          <a href="./category-fantasy-sci-fi.html">科幻奇幻</a>
+          <a href="./category-history-costume.html">古装历史</a>
+          <a href="./category-world-cinema.html">海外佳片</a>
+        </div>
+      </div>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </nav>
+    <form class="nav-search" data-search-form data-target="./search.html">
+      <input type="search" name="q" placeholder="搜索内容..." aria-label="搜索内容">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" data-menu-toggle aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./rankings.html">排行榜</a>
+    <a href="./search.html">搜索</a>
+    <form data-search-form data-target="./search.html">
+      <input type="search" name="q" placeholder="搜索片名、类型、地区">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="page-hero">
+    <div class="page-shell">
+      <h1>内容搜索</h1>
+      <p>输入片名、地区、年份、类型或标签，快速筛选站内影片并进入详情页观看。</p>
+    </div>
+  </section>
+  <div class="page-shell content-space">
+    <section>
+      <form class="filter-bar" data-search-form data-target="./search.html">
+        <input type="search" name="q" data-search-input placeholder="搜索标题、地区、类型、标签与简介">
+        <select data-genre-filter aria-label="类型筛选">
+          <option value="">全部类型</option>
+          <option value="热映精选">热映精选</option>
+          <option value="动作冒险">动作冒险</option>
+          <option value="悬疑惊悚">悬疑惊悚</option>
+          <option value="爱情剧情">爱情剧情</option>
+          <option value="喜剧生活">喜剧生活</option>
+          <option value="科幻奇幻">科幻奇幻</option>
+          <option value="古装历史">古装历史</option>
+          <option value="海外佳片">海外佳片</option>
+          <option value="纪录动画">纪录动画</option>
+          <option value="家庭青春">家庭青春</option>
+          <option value="犯罪战争">犯罪战争</option>
+          <option value="经典片库">经典片库</option>
+          <option value="LGBT">LGBT</option>
+          <option value="cult">cult</option>
+          <option value="乡土">乡土</option>
+          <option value="乡村">乡村</option>
+          <option value="人文">人文</option>
+          <option value="人格分裂">人格分裂</option>
+          <option value="仙侠">仙侠</option>
+          <option value="仙侠动作">仙侠动作</option>
+          <option value="传奇">传奇</option>
+          <option value="传记">传记</option>
+          <option value="传记剧情">传记剧情</option>
+          <option value="伦理">伦理</option>
+          <option value="伪纪录">伪纪录</option>
+          <option value="伪纪录片">伪纪录片</option>
+          <option value="体育">体育</option>
+          <option value="体育传记">体育传记</option>
+          <option value="体育励志">体育励志</option>
+          <option value="修仙">修仙</option>
+          <option value="偶像">偶像</option>
+          <option value="催泪">催泪</option>
+          <option value="儿童">儿童</option>
+          <option value="公路">公路</option>
+          <option value="冒险">冒险</option>
+          <option value="冒险传记">冒险传记</option>
+          <option value="冒险奇幻悬疑">冒险奇幻悬疑</option>
+          <option value="冒险惊悚">冒险惊悚</option>
+          <option value="军事">军事</option>
+          <option value="军旅">军旅</option>
+          <option value="农村">农村</option>
+          <option value="冷战">冷战</option>
+          <option value="凶宅">凶宅</option>
+          <option value="刑侦">刑侦</option>
+          <option value="创业">创业</option>
+          <option value="剧情">剧情</option>
+          <option value="剧情家庭">剧情家庭</option>
+          <option value="剧情悬疑">剧情悬疑</option>
+          <option value="剧情爱情">剧情爱情</option>
+          <option value="剧情犯罪">剧情犯罪</option>
+          <option value="动作">动作</option>
+          <option value="动作冒险">动作冒险</option>
+          <option value="动作喜剧">动作喜剧</option>
+          <option value="动作奇幻">动作奇幻</option>
+          <option value="动作犯罪">动作犯罪</option>
+          <option value="动态漫画">动态漫画</option>
+          <option value="动物">动物</option>
+          <option value="动画">动画</option>
+          <option value="动画动作喜剧">动画动作喜剧</option>
+          <option value="动画奇幻">动画奇幻</option>
+          <option value="励志">励志</option>
+          <option value="医疗">医疗</option>
+          <option value="历史">历史</option>
+          <option value="历史传记">历史传记</option>
+          <option value="历史剧情">历史剧情</option>
+          <option value="历史悬疑">历史悬疑</option>
+          <option value="历史情色">历史情色</option>
+          <option value="历史架空">历史架空</option>
+          <option value="友情">友情</option>
+          <option value="古生物">古生物</option>
+          <option value="古装">古装</option>
+          <option value="古装喜剧">古装喜剧</option>
+          <option value="古装宫廷虐恋">古装宫廷虐恋</option>
+          <option value="古装爱情">古装爱情</option>
+          <option value="古装甜宠轻喜剧">古装甜宠轻喜剧</option>
+          <option value="史诗">史诗</option>
+          <option value="同性">同性</option>
+          <option value="哲学">哲学</option>
+          <option value="哲理">哲理</option>
+          <option value="商战">商战</option>
+          <option value="喜剧">喜剧</option>
+          <option value="喜剧剧情">喜剧剧情</option>
+          <option value="喜剧动画">喜剧动画</option>
+          <option value="喜剧爱情">喜剧爱情</option>
+          <option value="奇幻">奇幻</option>
+          <option value="奇幻喜剧">奇幻喜剧</option>
+          <option value="奇幻悬疑爱情">奇幻悬疑爱情</option>
+          <option value="奇幻战斗">奇幻战斗</option>
+          <option value="奇幻爱情">奇幻爱情</option>
+          <option value="女性">女性</option>
+          <option value="婚姻">婚姻</option>
+          <option value="宗教">宗教</option>
+        </select>
+        <button type="submit">搜索</button>
+      </form>
+      <div class="search-status" data-search-status></div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>高清影视资源库</strong>
+      <p>免费看在线精品亚洲一区二区高清视频资源库，收录全网热门影视剧大全，支持高清流畅在线播放，无广告打扰，让你轻松观看最新电影、电视剧及热门剧集。</p>
+    </div>
+    <div class="footer-links">
+        <a href="./category-hot-picks.html">热映精选</a>
+        <a href="./category-action-adventure.html">动作冒险</a>
+        <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="./category-romance-drama.html">爱情剧情</a>
+        <a href="./category-comedy-life.html">喜剧生活</a>
+        <a href="./category-fantasy-sci-fi.html">科幻奇幻</a>
+    </div>
+  </div>
+</footer>
+  <script src="./assets/js/site.js"></script>
+  <script src="./assets/js/movie-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
